@@ -35,6 +35,10 @@ body {
 
 .no-scroll {
   overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    overflow-y: auto;
+  }
 }
 
 @media screen and (min-width: 1280px) {
