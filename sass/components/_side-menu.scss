@@ -1,0 +1,102 @@
+.side-menu {
+  color: #000;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  background-color: rgb(255, 255, 255);
+  width: 306px;
+
+  @media screen and (min-width: 1279.99px) {
+    position: fixed;
+    min-height: 742px;
+    height: 100vh;
+    float: left;
+  }
+}
+
+.side-menu__title {
+  @include font(600, 26px, 39px, 1%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: calc(53px * (100vh / 742px));
+
+  @media screen and (min-height: 742px) {
+    margin-bottom: 53px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 36px;
+    margin-bottom: 64px;
+  }
+}
+
+.side-menu__version {
+  margin-left: -4px;
+  @include font(500, 10px, 15px, -1%);
+  color: rgb(131, 131, 131);
+  margin-top: 11px;
+}
+
+.side-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.side-menu__item {
+  display: block;
+  padding: 11px 8px 11px 11px;
+  color: #333;
+  @include font(600, 20px, 21px, -1%);
+  border-radius: 8px;
+  @include transition(color background-color);
+
+  &:hover,
+  &:focus {
+    background-color: rgb(89, 50, 234);
+    color: #fff;
+  }
+}
+
+.side-menu__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.side-menu__link--active-page > .side-menu__icon {
+  display: none;
+}
+
+.side-menu__icon {
+  margin-left: auto;
+}
+
+.profile {
+  position: absolute;
+  bottom: 6px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: calc(53px * (100vh / 742px));
+}
+
+.profile__image {
+  width: 42px;
+  height: 42px;
+}
+
+.profile__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile__name {
+  @include font(500, 14px, 21px, 1%);
+}
+
+.profile__position {
+  color: rgb(117, 117, 117);
+  @include font(400, 12px, 18px, 1%);
+}

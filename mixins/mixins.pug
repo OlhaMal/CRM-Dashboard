@@ -1,0 +1,58 @@
+mixin sideMenuItem(href="#", iconId, text, isActive = false)
+  li.side-menu__item
+    a.side-menu__link(href= href  class= isActive ? 'side-menu__link--active-page' : '')
+      svg.icon(width="24" height="24")
+        use(href=`./img/sprite.svg#${iconId}`)
+      | #{text}
+      svg.side-menu__icon(width="16" height="16")
+        use(href="./img/sprite.svg#chevron-right")
+
+mixin desktopTable(customers)
+  ul.table-name__list
+    li.table__header.table__header--first Customer Name
+    each customer in customers
+      li.table-head__item= customer.name
+
+  ul.table-company__list
+    li.table__header Company
+    each customer in customers
+      li.table-company__item= customer.company
+
+  ul.table-number__list
+    li.table__header Phone Number
+    each customer in customers
+      li.table-number__item= customer.phoneNumber
+
+  ul.table-email__list
+    li.table__header Email
+    each customer in customers
+      li.table-email__item= customer.email
+
+  ul.table-country__list
+    li.table__header Country
+    each customer in customers
+      li.table-country__item= customer.country
+
+  ul.table-status__list
+    li.table__header.table__header--last Status
+    each customer in customers
+      li.table-status__item(class=`table-status__item--${customer.status.toLowerCase()}`)= customer.status
+
+mixin mobileTable(customer)
+    li.mobile-table__item
+      div.mobile-table__customer
+        div.mobile-table__wrapper
+          h4.mobile-table__name= customer.name
+          div.mobile-table__main-info
+            p.mobile-table__company= customer.company
+            p.mobile-table_country= customer.country
+        div.mobile-table__contact
+          p.mobile-table__number= customer.phoneNumber
+          p.mobile-table__email= customer.email
+      div.mobile-table__status(class=`mobile-table__status--${customer.status.toLowerCase()}`)= customer.status
+
+mixin pagination(page)
+    if page === '...'
+        li.pagination__item.pagination__item--delimiter= page
+    else
+        li.pagination__item= page

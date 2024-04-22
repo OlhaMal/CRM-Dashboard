@@ -1,0 +1,53 @@
+.footer {
+  margin-top: 30px;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer__text {
+  color: rgb(181, 183, 192);
+  @include font(500, 14px, 21px, -1%);
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pagination__item {
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 4px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(64, 75, 82);
+  @include font(500, 12px, 100%, -1%);
+  width: 26px;
+  height: 26px;
+  padding: 6px 0;
+  text-align: center;
+  cursor: pointer;
+  @include transition(color border background-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid rgb(89, 50, 234);
+    background: rgb(89, 50, 234);
+    color: rgb(255, 255, 255);
+  }
+
+  &--delimiter {
+    border: unset;
+    background-color: unset;
+    width: fit-content;
+
+    &:hover,
+    &:focus {
+      border: unset;
+      background-color: unset;
+      color: rgb(64, 75, 82);
+    }
+  }
+}

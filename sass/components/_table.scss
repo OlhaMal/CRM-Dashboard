@@ -1,0 +1,90 @@
+.table {
+  display: none;
+
+  @media screen and (min-width: 860px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 970px;
+    @include font(500, 14px, 21px, -1%);
+    color: rgb(41, 45, 50);
+  }
+}
+
+.table__header {
+  position: relative;
+  color: rgb(181, 183, 192);
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  width: max-content;
+
+  &--first {
+    padding-left: 40px;
+  }
+
+  &--last {
+    padding-right: 67px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 590px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+}
+
+.table-head__item {
+  margin-left: 40px;
+  padding: 24px 0;
+  border-bottom: 1px solid transparent;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 748px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+    @media screen and (min-width: 900px) {
+      width: 788px;
+    }
+
+    @media screen and (min-width: 980px) {
+      width: 890px;
+    }
+  }
+}
+
+.table-company__item,
+.table-number__item,
+.table-email__item,
+.table-country__item {
+  padding: 24px 0;
+  border-bottom: 1px solid transparent;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 160px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    margin-left: 40px;
+  }
+}
+
+.table-status__item {
+  margin: 40px 40px 40px 0;
+  overflow: hidden;
+
+  &:nth-child(2),
+  &:last-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

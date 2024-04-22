@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>CRM Dashboard Customers</title>
+  </head>
+  <body>
+    <input id="side-menu__toggle" type="checkbox">
+    <label class="side-menu__btn" for="side-menu__toggle"><span class="side-menu__span"></span></label>
+    <aside class="side-menu"><a href="./index.html">
+        <h1 class="side-menu__title">
+          <svg width="37" height="37"> 
+            <use href="./img/sprite.svg#logo"></use>
+          </svg>Dashboard<span class="side-menu__version">v.01</span>
+        </h1></a>
+      <ul class="side-menu__list">
+        <li class="side-menu__item"><a class="side-menu__link side-menu__link--active-page" href="./index.html">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#key-square"></use>
+            </svg>Dashboard
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+        <li class="side-menu__item"><a class="side-menu__link" href="#">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#3d-square"></use>
+            </svg>Product
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+        <li class="side-menu__item"><a class="side-menu__link" href="#">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#user-square"></use>
+            </svg>Customers
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+        <li class="side-menu__item"><a class="side-menu__link" href="#">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#wallet-money"></use>
+            </svg>Income
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+        <li class="side-menu__item"><a class="side-menu__link" href="#">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#discount-shape"></use>
+            </svg>Promote
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+        <li class="side-menu__item"><a class="side-menu__link" href="#">
+            <svg class="icon" width="24" height="24">
+              <use href="./img/sprite.svg#message-question"></use>
+            </svg>Help
+            <svg class="side-menu__icon" width="16" height="16">
+              <use href="./img/sprite.svg#chevron-right"></use>
+            </svg></a></li>
+      </ul>
+      <div class="profile"><img class="profile__image" src="./img/profile-image.png" alt="Profile Image">
+        <div class="profile__information">
+          <h4 class="profile__name">Evano</h4>
+          <p class="profile__position">Project Manager</p>
+        </div>
+      </div>
+    </aside>
+    <main class="container">
+      <h2 class="title">Hello Evano 👋🏼,</h2>
+      <section class="section">
+        <header class="header"> 
+          <div class="header__container">
+            <h2 class="header__title">All Customers</h2>
+            <h3 class="header__subtitle">Active Members</h3>
+          </div>
+          <div class="search"><img class="search__image" src="./img/search.png" alt="Search icon">
+            <input class="search__input" type="search" placeholder="Search">
+          </div>
+        </header>
+        <div class="table">
+          <ul class="table-name__list">
+            <li class="table__header table__header--first">Customer Name</li>
+            <li class="table-head__item">Jane Cooper</li>
+            <li class="table-head__item">Floyd Miles</li>
+            <li class="table-head__item">Ronald Richards</li>
+            <li class="table-head__item">Marvin McKinney</li>
+            <li class="table-head__item">Jerome Bell</li>
+            <li class="table-head__item">Kathryn Murphy</li>
+            <li class="table-head__item">Jacob Jones</li>
+            <li class="table-head__item">Kristin Watson</li>
+          </ul>
+          <ul class="table-company__list">
+            <li class="table__header">Company</li>
+            <li class="table-company__item">Microsoft</li>
+            <li class="table-company__item">Yahoo</li>
+            <li class="table-company__item">Adobe</li>
+            <li class="table-company__item">Tesla</li>
+            <li class="table-company__item">Google</li>
+            <li class="table-company__item">Microsoft</li>
+            <li class="table-company__item">Yahoo</li>
+            <li class="table-company__item">Facebook</li>
+          </ul>
+          <ul class="table-number__list">
+            <li class="table__header">Phone Number</li>
+            <li class="table-number__item">(225) 555-0118</li>
+            <li class="table-number__item">(205) 555-0100</li>
+            <li class="table-number__item">(302) 555-0107</li>
+            <li class="table-number__item">(252) 555-0126</li>
+            <li class="table-number__item">(629) 555-0129</li>
+            <li class="table-number__item">(406) 555-0120</li>
+            <li class="table-number__item">(208) 555-0112</li>
+            <li class="table-number__item">(704) 555-0127</li>
+          </ul>
+          <ul class="table-email__list">
+            <li class="table__header">Email</li>
+            <li class="table-email__item">jane@microsoft.com</li>
+            <li class="table-email__item">floyd@yahoo.com</li>
+            <li class="table-email__item">ronald@adobe.com</li>
+            <li class="table-email__item">marvin@tesla.com</li>
+            <li class="table-email__item">jerome@google.com</li>
+            <li class="table-email__item">kathryn@microsoft.com</li>
+            <li class="table-email__item">jacob@yahoo.com</li>
+            <li class="table-email__item">kristin@facebook.com</li>
+          </ul>
+          <ul class="table-country__list">
+            <li class="table__header">Country</li>
+            <li class="table-country__item">United States</li>
+            <li class="table-country__item">Kiribati</li>
+            <li class="table-country__item">Israel</li>
+            <li class="table-country__item">Iran</li>
+            <li class="table-country__item">Réunion</li>
+            <li class="table-country__item">Curaçao</li>
+            <li class="table-country__item">Brazil</li>
+            <li class="table-country__item">Åland Islands</li>
+          </ul>
+          <ul class="table-status__list">
+            <li class="table__header table__header--last">Status</li>
+            <li class="table-status__item table-status__item--active">Active</li>
+            <li class="table-status__item table-status__item--inactive">Inactive</li>
+            <li class="table-status__item table-status__item--inactive">Inactive</li>
+            <li class="table-status__item table-status__item--active">Active</li>
+            <li class="table-status__item table-status__item--active">Active</li>
+            <li class="table-status__item table-status__item--active">Active</li>
+            <li class="table-status__item table-status__item--active">Active</li>
+            <li class="table-status__item table-status__item--inactive">Inactive</li>
+          </ul>
+        </div>
+        <ul class="mobile-table">
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Jane Cooper</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Microsoft</p>
+                  <p class="mobile-table_country">United States</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(225) 555-0118</p>
+                <p class="mobile-table__email">jane@microsoft.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--active">Active</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Floyd Miles</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Yahoo</p>
+                  <p class="mobile-table_country">Kiribati</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(205) 555-0100</p>
+                <p class="mobile-table__email">floyd@yahoo.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--inactive">Inactive</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Ronald Richards</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Adobe</p>
+                  <p class="mobile-table_country">Israel</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(302) 555-0107</p>
+                <p class="mobile-table__email">ronald@adobe.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--inactive">Inactive</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Marvin McKinney</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Tesla</p>
+                  <p class="mobile-table_country">Iran</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(252) 555-0126</p>
+                <p class="mobile-table__email">marvin@tesla.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--active">Active</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Jerome Bell</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Google</p>
+                  <p class="mobile-table_country">Réunion</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(629) 555-0129</p>
+                <p class="mobile-table__email">jerome@google.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--active">Active</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Kathryn Murphy</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Microsoft</p>
+                  <p class="mobile-table_country">Curaçao</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(406) 555-0120</p>
+                <p class="mobile-table__email">kathryn@microsoft.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--active">Active</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Jacob Jones</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Yahoo</p>
+                  <p class="mobile-table_country">Brazil</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(208) 555-0112</p>
+                <p class="mobile-table__email">jacob@yahoo.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--active">Active</div>
+          </li>
+          <li class="mobile-table__item">
+            <div class="mobile-table__customer">
+              <div class="mobile-table__wrapper">
+                <h4 class="mobile-table__name">Kristin Watson</h4>
+                <div class="mobile-table__main-info">
+                  <p class="mobile-table__company">Facebook</p>
+                  <p class="mobile-table_country">Åland Islands</p>
+                </div>
+              </div>
+              <div class="mobile-table__contact">
+                <p class="mobile-table__number">(704) 555-0127</p>
+                <p class="mobile-table__email">kristin@facebook.com</p>
+              </div>
+            </div>
+            <div class="mobile-table__status mobile-table__status--inactive">Inactive</div>
+          </li>
+        </ul>
+        <footer class="footer">
+          <p class="footer__text">Showing data 1 to 8 of 256K entries</p>
+          <ul class="pagination"> 
+            <li class="pagination__item">&lt;</li>
+            <li class="pagination__item">1</li>
+            <li class="pagination__item">2</li>
+            <li class="pagination__item">3</li>
+            <li class="pagination__item">4</li>
+            <li class="pagination__item pagination__item--delimiter">...</li>
+            <li class="pagination__item">40</li>
+            <li class="pagination__item">&gt;</li>
+          </ul>
+        </footer>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

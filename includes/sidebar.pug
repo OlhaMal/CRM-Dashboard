@@ -1,0 +1,15 @@
+aside.side-menu
+            a(href="./index.html")
+                h1.side-menu__title
+                    svg(width="37" height="37") 
+                        use(href="./img/sprite.svg#logo")
+                    | Dashboard
+                    span.side-menu__version v.01
+            ul.side-menu__list
+                each item in sideMenuItems
+                    +sideMenuItem(item.href, item.iconId, item.text, item.isActive)
+            .profile
+                img.profile__image(src="./img/profile-image.png" alt="Profile Image")
+                .profile__information
+                    h4.profile__name Evano
+                    p.profile__position Project Manager

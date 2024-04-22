@@ -1,0 +1,126 @@
+.mobile-table {
+  color: rgb(41, 45, 50);
+  padding: 0 20px;
+
+  @media screen and (min-width: 400px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 860px) {
+    display: none;
+  }
+}
+
+.mobile-table__item {
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-table__customer {
+  display: inline-flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.mobile-table__name {
+  @include font(500, 10px, 15px, -1%);
+  @media screen and (min-width: 640px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.mobile-table__main-info {
+  color: rgb(181, 183, 192);
+  display: flex;
+  gap: 5px;
+}
+
+.mobile-table__company {
+  @include font(500, 9px, 11px, -1%);
+  padding-right: 3px;
+  border-right: 1px solid rgb(181, 183, 192);
+
+  @media screen and (min-width: 640px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.mobile-table_country {
+  @include font(500, 9px, 11px, -1%);
+
+  @media screen and (min-width: 640px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.mobile-table__contact {
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 640px) {
+    flex-direction: column;
+    margin-left: auto;
+    width: 150px;
+    margin-right: 100px;
+  }
+}
+
+.mobile-table__number {
+  @include font(500, 9px, 11px, -1%);
+  margin-right: 3px;
+  @media screen and (min-width: 640px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.mobile-table__email {
+  @include font(500, 9px, 11px, -1%);
+  @media screen and (min-width: 640px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.mobile-table__status,
+.table-status__item {
+  @include font(500, 12px, 16px, -1%);
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border-radius: 4px;
+
+  &--active {
+    color: rgb(0, 135, 103);
+    border: 1px solid rgb(0, 176, 135);
+    background-color: rgba(22, 192, 152, 0.38);
+  }
+
+  &--inactive {
+    color: rgb(223, 4, 4);
+    border: 1px solid rgb(223, 4, 4);
+    background-color: rgb(255, 197, 197);
+  }
+
+  @media screen and (min-width: 640px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media screen and (min-width: 980px) {
+    height: 29px;
+  }
+}

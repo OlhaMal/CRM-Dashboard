@@ -1,0 +1,35 @@
+include ../data/data
+include ../mixins/mixins 
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="./css/main.min.css")
+        link(rel="icon" type="image/x-icon" href="./img/favicon.ico")
+        title CRM Dashboard Customers
+    body
+        input#side-menu__toggle(type="checkbox")
+        label.side-menu__btn(for="side-menu__toggle")
+            span.side-menu__span
+        block sidebar 
+            include ../includes/sidebar
+        main.container
+            h2.title Hello Evano 👋🏼,
+            section.section
+                header.header 
+                    .header__container
+                        h2.header__title All Customers
+                        h3.header__subtitle Active Members
+                    .search
+                        img.search__image(src="./img/search.png" alt="Search icon")
+                        input.search__input(type="search" placeholder="Search")
+                block table 
+                    h3 Reusable-content
+                block mobile-table 
+                    h3 Reusable-content
+                block footer
+                    include ../includes/footer
+        script(src="./js/script.js")

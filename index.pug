@@ -1,0 +1,10 @@
+extends templates/layout
+
+block table 
+    .table
+        +desktopTable(customers)
+
+block mobile-table
+    ul.mobile-table
+        each customer in customers
+            +mobileTable(customer)  
