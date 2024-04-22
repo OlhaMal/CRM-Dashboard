@@ -168,6 +168,11 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+@media screen and (min-width: 1280px) {
+  .no-scroll {
+    overflow-y: auto;
+  }
+}
 
 .container {
   min-width: 300px;
